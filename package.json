@@ -25,6 +25,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -44,6 +49,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "husky": "^8.0.3",
+    "jest-extended": "^4.0.2",
+    "prettier": "^3.0.3",
+    "pretty-quick": "^3.1.3"
   }
 }
